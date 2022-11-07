@@ -1,0 +1,17 @@
+{
+	"extractor_name": "InterpDeformViT",
+
+	"clip_length": 25,
+	"feature_norm": true,
+
+	"model_config": {
+		"input_resolution": 224,
+		"model_resolution": 224,
+		"patch_size": 16,
+		"num_heads": 12,
+		"num_features": 768,
+		"input_type": "pano",
+		"num_classes": 1000,
+		"train_type": "imgn"
+	}
+}

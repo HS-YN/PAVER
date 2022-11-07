@@ -1,0 +1,10 @@
+{
+    "dataset_name": "Wild360",
+
+    "max_epoch": 5,
+    "warmup_epoch": 0,
+    "batch_size": 1,
+    "num_frame": 5,
+
+    "eval_res": 120
+}

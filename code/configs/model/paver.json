@@ -1,0 +1,37 @@
+{
+    "model_name": "FusePAVER",
+
+    "lr": 2e-7,
+    "weight_decay": 1e-3,
+    "num_frame": 5,
+    "eval_start_epoch": 0,
+
+    "use_exp_decay": false,
+    "use_epoch_decay": false,
+    "iterdecay_rate": 0.5,
+    "epochdecay_rate": 0.99999,
+
+
+    "model_config": {
+        "drop_prob": 0.1,               
+        "lambda_spatial_feat": 0.5,
+        "lambda_temporal_feat": 20.0,
+        "lambda_cls": 0.1,
+        "mask_prob": 0.15,
+
+        "coeff_cls": 1.0,
+        "coeff_time": 1.0,
+        "coeff_space": 1.0,
+
+        "criterion_mfp": "mse",
+
+        "spatial_adjacency": "spherical",
+        "heatmap_geometry": "spherical",
+
+        "cls_encoder_type": "mlp",
+
+        "depth": 1,
+        "sigma": 16,
+        "verbose_mode": false
+    }
+}
